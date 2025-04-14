@@ -3,3 +3,7 @@
 server/__pycache__
 
 vemv
+
+.DS_Store
+
+server/.DS_Store

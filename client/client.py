@@ -6,15 +6,12 @@ import starlette
 
 async def main():
 
+    command = "python3" 
     server_params = StdioServerParameters(
-        command =  "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
-        args=[
-            "--directory",
-            "/Users/vasstavkumarchava/Desktop/mcp-new/server",
-            "run",
-            "server.py"
-        ]
+        command=command,
+        args=['/Users/vasstavkumarchava/Desktop/mcp-new/server/server.py'],
     )
+    
         
 
     async with stdio_client(server_params) as (read, write):
